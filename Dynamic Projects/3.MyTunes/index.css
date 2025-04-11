@@ -1,0 +1,315 @@
+/* Fonts imported from google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* some variables */
+:root {
+    --primary-color: #b90415;
+    --primary-color-hover: #d3071b;
+    --secondary-color: #103063;
+    --secondary-color-hover: #143f85;
+    --light-color: #f4f4f4;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    scroll-behavior: smooth;
+    position: relative;
+}
+/* Nav section */
+nav {
+    width: 100%;
+    height: 5.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    background-color: #333;
+    color: white;
+    font-weight: 300;
+    position: fixed;
+    top: 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+}
+
+/* Style for each navigation item */
+.nav-links p {
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.nav-links p:hover {
+    transform: scale(1.1);
+    background-color: #5d5d60;
+    padding: 5px;
+}
+
+/* Hide hamburger on larger screens */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: right;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 3rem;
+    }
+}
+
+/* Main content */
+/* First div */
+.top-present{
+    width: 100%;
+    height: 100vh;
+    background: url('./images/showcase.jpeg') no-repeat center / cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
+    gap: 2rem;
+}
+.top-present h1{
+    font-size: 4rem;
+    font-weight: 500;
+    margin-top: -8rem;
+}
+.top-present h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.top-present p{
+    width: 76%;
+    font-size: 1.1rem;
+}
+/* Second div */
+.top-info{
+    width: 100%;
+    height: 150vh;
+    background-color: #252529;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+    text-align: center;
+}
+.top-info h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.top-info h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.top-info h5{
+    font-weight: 300;
+}
+.top-info p{
+    width: 75%;
+    line-height: 2rem;
+}
+.top-info button{
+    width: 11rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    background-color: var(--primary-color-hover);
+    border: none;
+    padding: .5rem;
+    cursor: pointer;
+}
+.imgTag{
+    width: 90%;
+    height: 80%;
+    background-image: url('./images/mockup1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* Third section */
+.mid-dis{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+.mid-dis h1{
+    font-weight: 600;
+    margin: 3rem 0 1rem 0;
+}
+.mid-dis p{
+    width: 90%;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+.mid-dis button{
+    width: 10%;
+    height: 3.5rem;
+    border: none;
+    outline: none;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-weight: 300;
+    cursor: pointer;
+}
+.mid-dis h5{
+    width: 100%;
+    height: 90%;
+    background-image: url('./images/mockup2.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Fourth section */
+.night-info{
+    width: 100%;
+    height: 70vh;
+    background-image: url('./images/section-bg.jpeg') ;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-direction: column;
+    color: #fff;
+    padding: 1rem;
+}
+.night-info h1{
+    font-weight: 600;
+}
+.night-info p{
+    font-size: 1.2rem;
+    width: 90%;
+    word-wrap: break-word;
+    line-height: 2rem;
+}
+/* Fifth section */
+.giftcard{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.giftlogo{
+    width:40%;
+    height: 80%;
+    background-image: url('./images/cards.png');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.giftdetail{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.giftdetail span{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.giftdetail h1{
+    font-weight: 500;
+}
+.giftdetail hr{
+    width: 100%;
+    opacity: .8;
+}
+.giftdetail p{
+    font-size: .9rem;
+    opacity: .8;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+/* Footer section */
+/* First Div */
+.bottom-top{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    background-color: #252529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 4rem;
+}
+.box{
+    width: 15%;
+    height: 90%;
+}
+.box h1{
+    font-size: 1.1rem;
+    width: 2fr;
+    height: auto;
+    font-weight: 400;
+}
+.box hr{
+    width: 100%;
+    opacity: .2;
+    margin: .5rem 0 .5rem 0;
+    cursor: pointer;
+}
+.box p{
+    font-size: .9rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+/* second div */
+.bottom-copyright{
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(56, 55, 55);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
