@@ -14,6 +14,7 @@ a{
     text-decoration: none;
     color: inherit;
 }
+/* nav starts here */
 nav{
     display: flex;
     align-items: center;
@@ -100,6 +101,7 @@ nav{
     gap: 5px;
     font-weight: 500;
 }
+/* header starts */
 .header-slider ul{
     display: flex;
     overflow-y: hidden;
@@ -225,3 +227,6 @@ footer{
     background: #131921;
     padding: 20px 60px;
 }
+
+
+/* The use of webtoolkit is there so on a certain item slider user can scroll horizontally on the items */
